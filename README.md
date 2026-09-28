@@ -37,6 +37,17 @@ along the frame to the logger.*
 | DS3231 RTC | I²C | SDA GPIO21 / SCL GPIO22 |
 | MicroSD card module | SPI (default VSPI) | CS GPIO5, SCK 18, MISO 19, MOSI 23 |
 
+All modules run from the ESP32's 3V3 rail except the MicroSD module, which takes
+5 V on VIN (for modules with an onboard 3.3 V regulator). The ESP32 itself is
+powered over USB.
+
+### Circuit diagram
+
+![Circuit diagram](docs/circuit_diagram.svg)
+
+A high-resolution PNG is also available at
+[`docs/circuit_diagram.png`](docs/circuit_diagram.png).
+
 Serial monitor runs at **115200 baud**.
 
 ## Libraries
@@ -143,6 +154,10 @@ to sanity-check that `TOF_THRESHOLD` sits comfortably below the resting gap.
   power cycle.
 - Brake detection infers lever position from a distance reading, so sensor
   alignment and stray reflections directly affect event boundaries.
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ## Author
 
