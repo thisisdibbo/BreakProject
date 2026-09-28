@@ -162,4 +162,5 @@ Released under the [MIT License](LICENSE).
 ## Author
 
 **Md. Mahin Rahman**\
-GitHub: [@thisisdibbo](https://github.com/thisisdibbo)
+GitHub: [@thisisdibbo](https://github.com/thisisdibbo)\
+Email: [mr.d2003feb@gmail.com](mailto:mr.d2003feb@gmail.com)
