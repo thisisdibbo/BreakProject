@@ -5,9 +5,14 @@ distance from a rotary encoder, detects brake events with a VL53L0X
 time-of-flight sensor, and writes timestamped CSV logs to an SD card using a
 DS3231 real-time clock.
 
-Built for braking-performance measurement on a wheeled vehicle (rickshaw /
-bicycle scale): each run is stored as its own session folder so successive
-tests stay separated.
+Built and field-tested on a cycle rickshaw for braking-performance
+measurement: each run is stored as its own session folder so successive tests
+stay separated.
+
+![Sensor assembly mounted on the front wheel of a test cycle rickshaw](docs/hardware.jpg)
+
+*Encoder mount on the front wheel of the test cycle rickshaw, with wiring routed
+along the frame to the logger.*
 
 ## Features
 
@@ -138,3 +143,10 @@ to sanity-check that `TOF_THRESHOLD` sits comfortably below the resting gap.
   power cycle.
 - Brake detection infers lever position from a distance reading, so sensor
   alignment and stray reflections directly affect event boundaries.
+
+## Author
+
+**Md. Mahin Rahman**\
+Department of Electrical and Electronic Engineering\
+Islamic University of Technology (IUT), Gazipur, Bangladesh\
+GitHub: [@thisisdibbo](https://github.com/thisisdibbo)
