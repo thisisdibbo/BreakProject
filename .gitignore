@@ -5,3 +5,6 @@
 .vscode/
 .DS_Store
 Thumbs.db
+
+# files delivered by Claude into this folder
+Claude outputs/

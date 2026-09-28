@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo/logo-banner.svg" alt="BreakProject — ESP32 braking distance and motion logger" width="720">
+</p>
+
 # BreakProject — ESP32 Braking Distance & Motion Logger
 
 An ESP32 data logger that measures wheel speed, acceleration and travelled
@@ -49,6 +53,53 @@ A high-resolution PNG is also available at
 [`docs/circuit_diagram.png`](docs/circuit_diagram.png).
 
 Serial monitor runs at **115200 baud**.
+
+## 3D-printed mount
+
+The encoder is driven by a friction roller that rides on the rickshaw's front
+tyre. The roller sits on the encoder shaft, the encoder is held by an arm, and
+the arm pivots on a clamp fixed to the frame so the roller stays on the tyre.
+Designed in Tinkercad; all STL files are in [`3D file/`](3D%20file/).
+
+### v2.0 — current
+
+<table>
+  <tr>
+    <td><img src="docs/3d/v2-parts-perspective.png" alt="v2.0 parts, perspective view" width="400"></td>
+    <td><img src="docs/3d/v2-parts-top.png" alt="v2.0 parts, top view" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/3d/v2-swing-arm.png" alt="v2.0 swing arm with encoder flange" width="400"></td>
+    <td align="center"><img src="docs/3d/v2-roller.png" alt="v2.0 grooved roller" width="220"></td>
+  </tr>
+</table>
+
+| File | Part |
+|---|---|
+| [`frame-mount.stl`](3D%20file/v2.0/frame-mount.stl) | Frame clamp half with the pivot clevis |
+| [`clamp-jaw.stl`](3D%20file/v2.0/clamp-jaw.stl) | Mating clamp half that closes around the frame tube |
+| [`swing-arm.stl`](3D%20file/v2.0/swing-arm.stl) | Swing arm with encoder flange and pivot eye |
+| [`roller-wheel.stl`](3D%20file/v2.0/roller-wheel.stl) | Grooved friction roller, Ø57 mm, mounts on the encoder shaft |
+
+### v1.0 — original
+
+<table>
+  <tr>
+    <td><img src="docs/3d/v1-perspective.png" alt="v1.0 assembly, perspective view" width="400"></td>
+    <td><img src="docs/3d/v1-side.png" alt="v1.0 assembly, side view" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/3d/v1-front.png" alt="v1.0 assembly, front view" width="400"></td>
+    <td><img src="docs/3d/v1-rear.png" alt="v1.0 assembly, rear view" width="400"></td>
+  </tr>
+</table>
+
+| File | Part |
+|---|---|
+| [`frame-clamp.stl`](3D%20file/v1.0/frame-clamp.stl) | Frame clamp with the pivot clevis |
+| [`arm-encoder-bracket.stl`](3D%20file/v1.0/arm-encoder-bracket.stl) | Arm with L-bracket that holds the encoder |
+| [`roller-wheel.stl`](3D%20file/v1.0/roller-wheel.stl) | Friction roller, Ø65 mm, mounts on the encoder shaft |
+| [`encoder-body.stl`](3D%20file/v1.0/encoder-body.stl) | Encoder body model, Ø38 mm |
 
 ## Libraries
 
